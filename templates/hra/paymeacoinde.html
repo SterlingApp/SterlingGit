@@ -48,22 +48,22 @@
 							</div>
 
 							<label class="item item-input  item-floating-label formselect" ng-class="{ 'has-errors' :myForm.starttransaction.$dirty && myForm.starttransaction.$invalid  ,'no-errors' :myForm.starttransaction.$valid  }">
-								<span class="input-label ItemlineHead1">Enter Start Transaction Date</span>	
-								<input type="text" ng-click="getTransDate()" class="bgnew" name="starttransaction" ng-model="acoinde.startTransDate"  id="forminput" placeholder="Enter start Transaction Date"   ng-readonly="true" required>
+								<span class="input-label ItemlineHead1">Enter Service Start Date</span>	
+								<input type="text" ng-click="getTransDate()" class="bgnew" name="starttransaction" ng-model="acoinde.startTransDate"  id="forminput" placeholder="Enter Service Start Date"   ng-readonly="true" required>
 							</label>
 							<div class="row">
 								<span style="color:red" ng-show="myForm.starttransaction.$dirty && myForm.starttransaction.$invalid">
-									<span ng-show="myForm.starttransaction.$error.required"> Start Transaction Date is required.</span>
+									<span ng-show="myForm.starttransaction.$error.required">Service Start Date is required.</span>
 								</span>
 							</div>
 
 							<label class="item item-input  item-floating-label formselect" ng-class="{ 'has-errors' :myForm.endtransaction.$dirty && myForm.endtransaction.$invalid  ,'no-errors' :myForm.endtransaction.$valid  }">
-								<span class="input-label ItemlineHead1">Enter End Transaction Date</span>	
-								<input type="text" ng-click="EndgetTransDate()" class="bgnew" name="endtransaction" ng-model="acoinde.endTransDate"  id="forminput" placeholder="Enter End Transaction Date"  ng-readonly="true"  required>
+								<span class="input-label ItemlineHead1">Enter Service End Date</span>	
+								<input type="text" ng-click="EndgetTransDate()" class="bgnew" name="endtransaction" ng-model="acoinde.endTransDate"  id="forminput" placeholder="Enter Service End Date"  ng-readonly="true"  required>
 							</label>
 							<div class="row">
 								<span style="color:red" ng-show="myForm.endtransaction.$dirty && myForm.endtransaction.$invalid">
-									<span ng-show="myForm.endtransaction.$error.required"> End Transaction Date is required.</span>
+									<span ng-show="myForm.endtransaction.$error.required">Service End Date is required.</span>
 								</span>
 							</div>
 							

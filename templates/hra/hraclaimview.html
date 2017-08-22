@@ -60,26 +60,27 @@
 				<!-- </div> -->
 			<!-- </div> -->
 		<!-- </div> -->
-		<div class="div1" ng-repeat="data in debit_card_list">
+		<div class="div1" ng-repeat="data in claim_detail_list">
 			<div class="card">
 				<div class="item ItemLinehr">
 					<span class="ItemHeadLine ">{{data.CLAIM_DATE}}</span>
 				</div>
-				<div class="item item-avatar itemleft ItemLinehr" ng-click="getClaimDetail(data)">
+				<!-- <div class="item item-avatar itemleft ItemLinehr" ng-click="getClaimDetail(data)"> -->
+				<div class="item item-avatar itemleft ItemLinehr">
 					<img src="img/item/Account-number.png" class="item-Image">
 					<div class="ItemlineHead cardContent">CLAIM ID</div>
 					<div class="ItemlineValueText cardContent">{{data.CLAIM_ID}}</div>
 				</div>
-				<!-- <div class="item item-avatar itemleft"> -->
-					<!-- <img src="img/item/account_balance.png" class="item-Image"> -->
-					<!-- <div class="ItemlineHead cardContent">CLAIM AMOUNT</div> -->
-					<!-- <div class="ItemlineValueText cardContent">{{data.CLAIM_AMOUNT  | currency}}</div> -->
-				<!-- </div> -->
-				<!-- <div class="item item-avatar itemleft"> -->
-					<!-- <img src="img/item/Allowable-contributions.png" class="item-Image"> -->
-					<!-- <div class="ItemlineHead cardContent">REASON NAME</div> -->
-					<!-- <div class="ItemlineValueText cardContent">{{data.REASON_NAME}}</div> -->
-				<!-- </div> -->
+				<div class="item item-avatar itemleft">
+					<img src="img/item/account_balance.png" class="item-Image">
+					<div class="ItemlineHead cardContent">CLAIM AMOUNT</div>
+					<div class="ItemlineValueText cardContent">{{data.CLAIM_AMOUNT  | currency}}</div>
+				</div>
+				<div class="item item-avatar itemleft">
+					<img src="img/item/Allowable-contributions.png" class="item-Image">
+					<div class="ItemlineHead cardContent">REASON NAME</div>
+					<div class="ItemlineValueText cardContent">{{data.REASON_NAME}}</div>
+				</div>
 			</div>
 		</div>
 		<div style="height: 10px;"></div>
