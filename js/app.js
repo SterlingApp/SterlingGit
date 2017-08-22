@@ -11,7 +11,7 @@ angular.module('starter', ['ionic', 'starter.controllers','ngCordova'])
 		}
 	});
 	$ionicPlatform.registerBackButtonAction(function () {
-		//alert($location.url());
+		// alert($location.url());
 		if($location.url()=='/login'){
 			if ($rootScope.backButtonPressedOnceToExit) {
 				ionic.Platform.exitApp();
@@ -205,6 +205,14 @@ angular.module('starter', ['ionic', 'starter.controllers','ngCordova'])
 			$state.go('app.fsa');
 		}else if($location.url()=='/fsapayme'){
 			$state.go('app.fsa');
+		}else if($location.url()=='/newclaim'){
+			$state.go('new');
+		}else if($location.url()=='/new'){
+			$state.go('app.fsa');
+		}else if($location.url()=='/fsadependent'){
+			$state.go('fsapayprovider');
+		}else if($location.url()=='/fsapayprovider'){
+			$state.go('app.fsa');
 		}else{
 			window.history.back();
 		}
@@ -239,6 +247,7 @@ angular.module('starter', ['ionic', 'starter.controllers','ngCordova'])
 	// HSA
 	.state('app.hsa', {
 		url: "/hsa",
+		cache: false,
 		views: {
 			'tab-hsa': {
 				templateUrl: "templates/hsa.html",
@@ -316,6 +325,7 @@ angular.module('starter', ['ionic', 'starter.controllers','ngCordova'])
 	//FSA
 	.state('app.fsa', {
 		url: "/fsa",
+		cache: false,
 		views: {
 			'tab-fsa': {
 				templateUrl: "templates/fsa.html",
@@ -471,6 +481,7 @@ angular.module('starter', ['ionic', 'starter.controllers','ngCordova'])
 	// HRA 
 	.state('app.hra', {
 		url: "/hra",
+		cache: false,
 		views: {
 			'tab-hra': {
 				templateUrl: "templates/hra/hra.html",
@@ -577,6 +588,7 @@ angular.module('starter', ['ionic', 'starter.controllers','ngCordova'])
 	// cobra
 	.state('app.cobra', {
 		url: "/cobra",
+		cache: false,
 		views: {
 			'tab-cobra': {
 				templateUrl: "templates/cobra/cobra.html",
